@@ -1,26 +1,14 @@
+function Square({ value }) {
+  function handleClick() {
+    console.log('clicked!');
+  }
 
-function Square({value}) {
-  return <button className="square">{value}</button>;
-}
-
-export default function Board() {
   return (
-    <>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-    </>
+    <button
+      className="square"
+      onClick={handleClick}
+    >
+      {value}
+    </button>
   );
 }
