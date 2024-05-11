@@ -1,10 +1,6 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./App.css";
 
-import App from "./App";
 
-export default function Square() {
+export default function Board() {
   return (
     <>
       <div className="board-row">
